@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "heartbeat",
+  "version": "12.0.0",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "start": "devvit run",
+    "build": "devvit actor bundle main",
+    "upload": "devvit upload"
+  },
+  "dependencies": {
+    "@devvit/cli": "0.8.11",
+    "@devvit/protos": "0.8.11",
+    "@devvit/public-api": "0.8.11"
+  },
+  "devDependencies": {
+    "@devvit/tsconfig": "0.8.11",
+    "typescript": "4.9.3",
+    "vitest": "0.29.8"
+  }
+}
