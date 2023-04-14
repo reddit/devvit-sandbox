@@ -2,67 +2,67 @@
 # yarn lockfile v1
 
 
-"@devvit/plugins@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/plugins/-/@devvit/plugins-0.8.12-next-2023-04-03-d4cc700c.0.tgz#7eeb768c65ac53377fdd71e0086e723c111861a5"
-  integrity sha512-VSBhl6eGQ3U0xkR3gjBNntaaHC5Bp8Nfzl+roFe0dww9kbciWG1l0Xggz1ZGeHrZH8B4rhlya3vY2OeJOSjBUA==
+"@devvit/plugins@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/plugins/-/@devvit/plugins-0.9.0.tgz#37febc758fb96e7c5d54a5a385eb932b3b1d205e"
+  integrity sha512-xYRpCfQBopCzmslNAN7zytZINPQhX/90CzxKcFZ47484LtU9xwgUk+s1OEvqCWnfyPz4X1moIdF8VMUBKa/e/A==
   dependencies:
-    "@devvit/protos" "0.8.12-next-2023-04-03-d4cc700c.0"
+    "@devvit/protos" "0.9.0"
 
-"@devvit/protos@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/protos/-/@devvit/protos-0.8.12-next-2023-04-03-d4cc700c.0.tgz#c522a44f4c73fb2647b77f01df012b94890dcf49"
-  integrity sha512-e1O0EdACBrSPV90SPwaVlyCfKTxAAfW4j+NxsScymm5VeZ+EKyQ4v30yHQDbNrstJDvoipzIMF4QS/1KDoyiFw==
+"@devvit/protos@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/protos/-/@devvit/protos-0.9.0.tgz#c8b0cf2ae61e2977a28b8bc9959ff858cda69f6e"
+  integrity sha512-+0YVBTevAEDoItcUH0B6qCUjEBw4rupZr4WtpMarHhoHd+N6tItv/+Z+P9uLq0JQPSiznYWT71byzJJjTd3DPQ==
   dependencies:
     glob "^8.0.3"
     protobufjs "7.1.2"
     rxjs "7.5.7"
 
-"@devvit/public-api@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/public-api/-/@devvit/public-api-0.8.12-next-2023-04-03-d4cc700c.0.tgz#6dfefdcc46385862abafdc5c54f09fd5d03b6dda"
-  integrity sha512-AOBQMg6a995/cp/RQUJTSYHisMYyGL4f6RMzIOswIMG32R29m9EnbCsEtOcXuW8Uz/7eeYnuRgig+zYrZBN2EA==
+"@devvit/public-api@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/public-api/-/@devvit/public-api-0.9.0.tgz#f0a66d9635800cd65b4dc304b8dcc471c0eafb59"
+  integrity sha512-kEJU7C5KpFE6W0JThs3BoTveuXEKxxRkYqjLv+H/Z82YRKSQEvgW9uJTQ/vNy4STWbcyFeuy8Vn/Is/dnXjIiQ==
   dependencies:
-    "@devvit/protos" "0.8.12-next-2023-04-03-d4cc700c.0"
-    "@devvit/runtimes" "0.8.12-next-2023-04-03-d4cc700c.0"
-    "@devvit/shared-types" "0.8.12-next-2023-04-03-d4cc700c.0"
+    "@devvit/protos" "0.9.0"
+    "@devvit/runtimes" "0.9.0"
+    "@devvit/shared-types" "0.9.0"
     tslib "2.4.1"
 
-"@devvit/runtimes@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/runtimes/-/@devvit/runtimes-0.8.12-next-2023-04-03-d4cc700c.0.tgz#d1a99072147822e5dee6998fe219263aa37386dc"
-  integrity sha512-C/Gp03cZPRQ8p1BcWSPvxNqUhijVxY4oBNd6WJD5V4FV2LdC9+A3evUkTUVy75S0XGY1Gh4xBqo7APN9AGL8Dw==
+"@devvit/runtimes@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/runtimes/-/@devvit/runtimes-0.9.0.tgz#5b9025caf2813ff9711853439f368cfac424f0a7"
+  integrity sha512-Wd+4GKukWk62uFEaXHu5S6S5H12hw8KFehtomnN6LcMyaDAAnU/2IQEv+lKNRtSadpQmZP3e0bx1efIxfQD8VQ==
   dependencies:
-    "@devvit/plugins" "0.8.12-next-2023-04-03-d4cc700c.0"
-    "@devvit/protos" "0.8.12-next-2023-04-03-d4cc700c.0"
-    "@devvit/shared-types" "0.8.12-next-2023-04-03-d4cc700c.0"
-    "@devvit/web-worker" "0.8.12-next-2023-04-03-d4cc700c.0"
+    "@devvit/plugins" "0.9.0"
+    "@devvit/protos" "0.9.0"
+    "@devvit/shared-types" "0.9.0"
+    "@devvit/web-worker" "0.9.0"
     buffer "6.0.3"
     cron-parser "4.7.1"
     grpc-web "^1.3.1"
     lru-cache "^7.10.1"
     node-localstorage "2.2.1"
     rxjs "7.5.7"
-    undici "5.19.1"
+    undici "5.21.2"
     uuid "8.3.2"
     ws "8.11.0"
 
-"@devvit/shared-types@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/shared-types/-/@devvit/shared-types-0.8.12-next-2023-04-03-d4cc700c.0.tgz#33e52593e4075cf2fa89b9a43823e2b828042dae"
-  integrity sha512-wflyCGrR2vKGE0EogZCvLxGQU2ZIO0aXy+Gy11JmihVWz2XebEyLnLQGDC9YS+oPb3qd+Vo7DVUUeoielsyCJQ==
+"@devvit/shared-types@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/shared-types/-/@devvit/shared-types-0.9.0.tgz#f5e47d493a5e68c6c5618b150c38e6be6f9288c1"
+  integrity sha512-aHeO3OvnrSn8EHlU7pNVhgxQBaBH34gyBVn9ukNYZsGMH5W1tRnsHKYDgGmbrpH5ZQLlWyy7zn4sjfz1bmv70Q==
   dependencies:
-    "@devvit/protos" "0.8.12-next-2023-04-03-d4cc700c.0"
+    "@devvit/protos" "0.9.0"
 
-"@devvit/tsconfig@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/tsconfig/-/@devvit/tsconfig-0.8.12-next-2023-04-03-d4cc700c.0.tgz#d19fa82dbc5a2887f38edde0668af0d5ae5b6da2"
-  integrity sha512-Fnbz27dDITyMS9H0t8TxNJDLE9Fp1Kzc/PKBqyj8tljcmzsM53TTmlCu95KYj4BB/PZMbrDMYo8GkrOfDhLNqg==
+"@devvit/tsconfig@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/tsconfig/-/@devvit/tsconfig-0.9.0.tgz#57feeb63c47900bef9c30d6a22258db42bfe2b5f"
+  integrity sha512-ZOEb7DUKS+ZmNrDRJCsjhqpYbbpRK6EQIwuulEaNPJ0BMYKOAmxsGrljrHo+wqu48uuGcp9YInxNcDHYLRw07A==
 
-"@devvit/web-worker@0.8.12-next-2023-04-03-d4cc700c.0":
-  version "0.8.12-next-2023-04-03-d4cc700c.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/web-worker/-/@devvit/web-worker-0.8.12-next-2023-04-03-d4cc700c.0.tgz#7de3e89cc70625d411b9e1f5e12384338c752a9e"
-  integrity sha512-/EuSYlnDEC4OOZ9/lkVVj8ITt9APHpv0ZBWQV5x1LzmSq3iU30bl4LH0V3d55F27l+vv4xugkNokdNAXUJWPIw==
+"@devvit/web-worker@0.9.0":
+  version "0.9.0"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/web-worker/-/@devvit/web-worker-0.9.0.tgz#2f42c492d1fb38456ca0cbe3cec3d1a85be2a6e5"
+  integrity sha512-wDBMLHyANHLY2nah+1y16xAU5wjlJBDC6/uIeXnjgE8ybDHhcqbmQCdqo2nHEg33DzK9xsPQlb+G8jdi5QHf/w==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -301,10 +301,10 @@ typescript@4.9.3:
   resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
   integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
 
-undici@5.19.1:
-  version "5.19.1"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/undici/-/undici-5.19.1.tgz#92b1fd3ab2c089b5a6bd3e579dcda8f1934ebf6d"
-  integrity sha512-YiZ61LPIgY73E7syxCDxxa3LV2yl3sN8spnIuTct60boiiRaE1J8mNWHO8Im2Zi/sFrPusjLlmRPrsyraSqX6A==
+undici@5.21.2:
+  version "5.21.2"
+  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/undici/-/undici-5.21.2.tgz#329f628aaea3f1539a28b9325dccc72097d29acd"
+  integrity sha512-f6pTQ9RF4DQtwoWSaC42P/NKlUjvezVvd9r155ohqkwFNRyBKM3f3pcty3ouusefNRyM25XhIQEbeQ46sZDJfQ==
   dependencies:
     busboy "^1.6.0"
 
