@@ -276,11 +276,6 @@ slide@^1.1.5:
   resolved "https://registry.npmjs.org/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
   integrity sha512-NwrtjCg+lZoqhFU8fOwl4ay2ei8PaqCBOUV3/ektPY9trO1yQ1oXEfmHAhKArUVUr/hOHvy5f6AdP17dCM0zMw==
 
-small-date@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/small-date/-/small-date-2.0.0.tgz#a36410d9df34b375309ce2365e724edd9d5edd53"
-  integrity sha512-WRDlufXiYQupV7ni9bLsoj+UMLnIKISyZl+iSntSAzi5SVqfMZvnf8nufCKPVFufS84aZBoCshzu+ACe38XG4A==
-
 streamsearch@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"

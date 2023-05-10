@@ -1,5 +1,3 @@
-import { format } from "small-date";
-
 import { DISPLAY_BLOCK, DISPLAY_FILL } from "./constants.js";
 import {
   JsonDocumentRow,
@@ -114,7 +112,7 @@ export function renderPuzzle(
         ],
       });
     }
-    puzzleDrawing.document[1].c.push(newC);
+    puzzleDrawing.document[1].c.push(newC as any);
   }
 
   // if complete, add history
@@ -142,7 +140,7 @@ function generateWrapup(puzzle: Puzzle): JsonDocumentRow[] {
             c: [
               {
                 e: "text",
-                t: `${format(new Date(move.created), "HH:mm MM/dd/yyyy")} - `,
+                t: `${new Date(move.created)} - `,
               },
               { e: "u/", t: move.user, l: false },
               {
@@ -171,7 +169,7 @@ function generateWrapup(puzzle: Puzzle): JsonDocumentRow[] {
             c: [
               {
                 e: "text",
-                t: `${format(new Date(move.created), "HH:mm MM/dd/yyyy")} - `,
+                t: `${new Date(move.created)} - `,
               },
               { e: "u/", t: move.user, l: false },
               {
@@ -196,7 +194,7 @@ function generateWrapup(puzzle: Puzzle): JsonDocumentRow[] {
 function getAchievements(puzzle: Puzzle): PuzzleAchievements {
   const firstMove = puzzle.history?.at(0)?.user || "";
   const lastMove = puzzle.history?.at(-1)?.user || "";
-  const userMap = {};
+  const userMap: { [key: string]: any } = {};
   for (const move of puzzle.history || []) {
     if (!userMap[move.user]) {
       userMap[move.user] = {
