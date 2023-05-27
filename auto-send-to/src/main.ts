@@ -5,6 +5,7 @@ Devvit.use(Devvit.Types.HTTP);
 
 const settingOptions: any = [
   {
+    defaultValue: 'posts',
     type: 'select',
     name: 'listenerObject',
     label: 'Objects to Send On',
@@ -19,6 +20,11 @@ const settingOptions: any = [
     name: 'webhook',
     label: 'Webhook URL',
   },
+  {
+    type: 'string',
+    name: 'flairId',
+    label: 'Only send when post has this flair ID (optional, will not send comments too)'
+  }
 ];
 
 Devvit.addSettings(settingOptions);
@@ -27,10 +33,11 @@ Devvit.addTrigger({
   events: [Devvit.Trigger.PostSubmit, Devvit.Trigger.CommentSubmit],
   handler: sendContentToWebhook,
 });
+
 async function sendContentToWebhook(event: Devvit.MultiTriggerEvent, metadata?: Metadata) {
   const webhook = await getSetting('webhook', metadata) as string
   const listenerObject = await getSetting('listenerObject', metadata) as string
-
+  const flairId = await getSetting('flairId', metadata) as string
   if (!webhook) {
     throw new Error('No webhook URL provided');
   }
@@ -42,6 +49,13 @@ async function sendContentToWebhook(event: Devvit.MultiTriggerEvent, metadata?: 
     return;
   }
 
+  if (flairId) {    
+    if ((event.type === Devvit.Trigger.CommentSubmit || event.type === Devvit.Trigger.PostSubmit)) {
+      const postFlairId = event.event?.post?.linkFlair?.templateId ?? '' as string;
+      if (postFlairId !== flairId)
+        return
+    }
+  }
   const msg = event.type === Devvit.Trigger.PostSubmit || event.type === Devvit.Trigger.CommentSubmit
     ? `New ${event.type.split('Submit')[0].toLowerCase()} submitted from ${event.event?.author?.name ?? ''}:\nUrl: https://www.reddit.com${event.event?.post?.url ?? ''}`
     : '';
