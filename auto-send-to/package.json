@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "auto-send-to-2",
+  "name": "auto-send-to",
   "version": "0.0.0",
   "license": "BSD-3-Clause",
   "type": "module",

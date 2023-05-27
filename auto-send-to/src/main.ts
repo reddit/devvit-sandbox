@@ -3,7 +3,7 @@ import { Devvit, getSetting } from '@devvit/public-api';
 
 Devvit.use(Devvit.Types.HTTP);
 
-const settingOptions: any = [
+const settingOptions = [
   {
     defaultValue: 'posts',
     type: 'select',
@@ -51,7 +51,7 @@ async function sendContentToWebhook(event: Devvit.MultiTriggerEvent, metadata?: 
 
   if (flairId) {    
     if ((event.type === Devvit.Trigger.CommentSubmit || event.type === Devvit.Trigger.PostSubmit)) {
-      const postFlairId = event.event?.post?.linkFlair?.templateId ?? '' as string;
+      const postFlairId = event.event?.post?.linkFlair?.templateId ?? '';
       if (postFlairId !== flairId)
         return
     }
