@@ -166,11 +166,11 @@ Devvit.addMenuItem({
     location: "post",
     forUserType: "moderator",
     async onPress(event, context) {
-        const current = await context.kvStore.get(KV_KEY_ROUNDUP_POSTS)
-        const value = current ? [...current as string[], event.targetId] : [event.targetId]
-        await context.kvStore.put(KV_KEY_ROUNDUP_POSTS, [... new Set(value)])
+        const current = await context.kvStore.get<string[]>(KV_KEY_ROUNDUP_POSTS) || []
+        const value = [...current, event.targetId]
+        await context.kvStore.put(KV_KEY_ROUNDUP_POSTS, [...new Set(value)])
         const post = await context.reddit.getPostById(event.targetId)
-        context.ui.showToast(`Added "${post.title}" to roundup!`);
+        context.ui.showToast(`Added "${post.title}" to roundup!`)
     }
 })
 
@@ -296,19 +296,12 @@ function handleTopList<T>(thing: T, field: keyof T, arr: Array<ThingWithScore<T>
 }
 
 function lowestScore(arr: Array<ThingWithScore<any>>): number {
-    if (arr.length == 0) {
-        return Number.MIN_VALUE
-    }
-
-    return arr[arr.length -1].score
+    return arr.at(-1)?.score ?? Number.MIN_VALUE
 }
 
 function sortAndTrim(arr: Array<ThingWithScore<any>>, limit: number) {
     arr.sort((a, b) => a.score < b.score ? 1 : -1)
-
-    while (arr.length > limit) {
-        arr.pop()
-    }
+    arr.length = limit
 }
 
 

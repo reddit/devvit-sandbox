@@ -9,26 +9,10 @@
   dependencies:
     "@devvit/protos" "0.9.10-next-2023-06-09-58259c73e.0"
 
-"@devvit/plugins@0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/plugins/-/@devvit/plugins-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-hTnYSLjrbNtdrAvhhSXuVUqqVd5DHLb+wdR9wu95pKp1gWYilfSasxzFFZt2aPfSHG4YxZQaLFNwaOzASKtDYw==
-  dependencies:
-    "@devvit/protos" "0.9.10-next-2023-06-28-4b4e975a0.0"
-
 "@devvit/protos@0.9.10-next-2023-06-09-58259c73e.0":
   version "0.9.10-next-2023-06-09-58259c73e.0"
   resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/protos/-/@devvit/protos-0.9.10-next-2023-06-09-58259c73e.0.tgz"
   integrity sha512-PoYHVXt31rX8kfaAa+BS2jOVHuBi7MIixSq8v1oLnS2ikx75yvlSp9Ftsw+5U3sDWkBfLNwTmuxbXal0ag+wew==
-  dependencies:
-    glob "8.0.3"
-    protobufjs "7.1.2"
-    rxjs "7.5.7"
-
-"@devvit/protos@0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/protos/-/@devvit/protos-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-WXpwpR7ZxuluTWYScPSZ9OmdtcK4xu1LoJyvkuqC5/UlU1Gm4ZcI9uldG+Lzwbgt7rjVDZUUgYRqE2TUjCAk3A==
   dependencies:
     glob "8.0.3"
     protobufjs "7.1.2"
@@ -45,16 +29,6 @@
     base64-js "1.5.1"
     clone-deep "4.0.1"
     lodash.isequal "4.5.0"
-
-"@devvit/public-api@^0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/public-api/-/@devvit/public-api-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-muaIwoZxKFBYlHWDSgdej+b00J2aWuw1L8MuGwP9bQeaDhEB+1OeBulSWqd4DXD29roRH5iSO4OpCXjXFnh8bg==
-  dependencies:
-    "@devvit/protos" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    "@devvit/runtimes" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    "@devvit/shared-types" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    base64-js "1.5.1"
 
 "@devvit/runtimes@0.9.10-next-2023-06-09-58259c73e.0":
   version "0.9.10-next-2023-06-09-58259c73e.0"
@@ -76,39 +50,12 @@
     uuid "9.0.0"
     ws "8.11.0"
 
-"@devvit/runtimes@0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/runtimes/-/@devvit/runtimes-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-rCeYpvYuKVcdIkTrqJ4ofAd0VZFHnPPVoFCeWIkKkOtgePbzQ4Pk9VkxjjzKWrD74OTtD3cYhLYkzy7sEVnNZQ==
-  dependencies:
-    "@devvit/plugins" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    "@devvit/protos" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    "@devvit/shared-types" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    "@devvit/web-worker" "0.9.10-next-2023-06-28-4b4e975a0.0"
-    base64-js "1.5.1"
-    buffer "6.0.3"
-    cron-parser "4.7.1"
-    grpc-web "1.4.2"
-    lru-cache "7.10.1"
-    node-localstorage "2.2.1"
-    rxjs "7.5.7"
-    undici "5.21.2"
-    uuid "9.0.0"
-    ws "8.11.0"
-
 "@devvit/shared-types@0.9.10-next-2023-06-09-58259c73e.0":
   version "0.9.10-next-2023-06-09-58259c73e.0"
   resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/shared-types/-/@devvit/shared-types-0.9.10-next-2023-06-09-58259c73e.0.tgz"
   integrity sha512-5nZ8Sz0a/EBQlezC83yHT2+BktK4gUKvr1s3NskZcMKrXznxA8ik7tof8SLm+EpWAO2beBaeWJpvF1h80O8gEQ==
   dependencies:
     "@devvit/protos" "0.9.10-next-2023-06-09-58259c73e.0"
-
-"@devvit/shared-types@0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/shared-types/-/@devvit/shared-types-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-kUth2g5v3xSmn1OO8FSThgo7GSXLm3FzHh9OGy8PhK881ZMXAQFveE5mRVFC8gKWsd5hVPFNbeW/iAj8p3fOKw==
-  dependencies:
-    "@devvit/protos" "0.9.10-next-2023-06-28-4b4e975a0.0"
 
 "@devvit/tsconfig@0.9.10-next-2023-06-05-de21ed869.0":
   version "0.9.10-next-2023-06-05-de21ed869.0"
@@ -119,11 +66,6 @@
   version "0.9.10-next-2023-06-09-58259c73e.0"
   resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/web-worker/-/@devvit/web-worker-0.9.10-next-2023-06-09-58259c73e.0.tgz"
   integrity sha512-d5Yw4rkpnNj29iWeUNeW2Ri1zIzGS2lMAq6ZR1LQRpegz29URJ3bOJSF2loLdqtqXfWBRjz2grKeUHWPPPMImw==
-
-"@devvit/web-worker@0.9.10-next-2023-06-28-4b4e975a0.0":
-  version "0.9.10-next-2023-06-28-4b4e975a0.0"
-  resolved "https://artifactory.build.ue1.snooguts.net:443/artifactory/api/npm/reddit-npm-prod/@devvit/web-worker/-/@devvit/web-worker-0.9.10-next-2023-06-28-4b4e975a0.0.tgz"
-  integrity sha512-lcxfkFW9GJYPRxNk63UvTVQovjA4MF+iaIob8APLRThaXzotl7lBvYznnriYS9vWqq4c8iEi5Q3qicdDCMGAwg==
 
 "@esbuild/android-arm64@0.17.19":
   version "0.17.19"

@@ -10,7 +10,6 @@
     "test:unit": "vitest --run"
   },
   "dependencies": {
-    "@devvit/public-api": "^0.9.10-next-2023-06-28-4b4e975a0.0",
     "@devvit/public-api-next": "^0.9.10-next-2023-06-09-58259c73e.0",
     "date-fns-tz": "^2.0.0",
     "timezones-list": "^3.0.2"
