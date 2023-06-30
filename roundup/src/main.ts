@@ -188,7 +188,7 @@ Devvit.addMenuItem({
             return
         }
 
-        const updated = posts.filter(p => p != event.targetId)
+        const updated = posts.filter(p => p !== event.targetId)
         await context.kvStore.put(KV_KEY_ROUNDUP_POSTS, updated)
         const post = await context.reddit.getPostById(event.targetId)
         context.ui.showToast(`Removed "${post.title}" from roundup!`);
