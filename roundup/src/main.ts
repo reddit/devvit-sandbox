@@ -9,7 +9,7 @@ import {
     zonedTimeToUtc,
 } from 'date-fns-tz'
 
-import { Devvit, SettingsValues, Context, RichTextBuilder, Post } from '@devvit/public-api-next';
+import { Devvit, SettingsValues, Context, RichTextBuilder, Post } from '@devvit/public-api';
 
 import {
     SCHEDULER_JOB_SETTINGS_CHECKER,
