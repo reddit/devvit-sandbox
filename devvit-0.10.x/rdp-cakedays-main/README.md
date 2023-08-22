@@ -12,7 +12,7 @@ This demonstrates how to use Custom Posts, Key Value Store and Scheduler. It imp
 3. Use "New Cakeday post" to create a new post
 4. Use "Add Cakeday test data" to add test data
 5. go to sh.reddit.com/r/***_yoursubredditname_***. You should see a post similar to this:
-![Cakedays](cakedays.gif "Cakedays")
+![Cakedays](Cakedays.gif "Cakedays")
 
 # Note
 * Users must opt into sharing their Cakeday by pressing the "Add me" button
