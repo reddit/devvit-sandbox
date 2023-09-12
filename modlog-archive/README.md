@@ -1,6 +1,6 @@
 # Modlog Archive
 
-This is an app that allows moderators to archive their moderation logs as posts within a separate mods-only subreddit.
+This app allows moderators to archive their moderation logs as posts within a separate mods-only subreddit.
 
 The app uses three main Devvit features: triggers, the Reddit API Client, and subreddit configuration settings.
 
