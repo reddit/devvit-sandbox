@@ -4,7 +4,7 @@ The classic puzzle game brought to Dev Platform custom posts.
 
 The app uses custom posts, useState, useInterval, Menu Actions, the Reddit API Client, and Images.
 
-![Minesweeper](/assets/minesweeper-readme.png "Minesweeper")
+![Minesweeper](/minesweeper/assets/minesweeper-readme.png "Minesweeper")
 
 Here’s how it works:
 
