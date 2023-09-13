@@ -129,7 +129,7 @@ export class MinesweeperGame {
     return this._clickMode[0];
   }
 
-  set clickMode(mode: ClickMode) {
+  private set clickMode(mode: ClickMode) {
     this._clickMode[1](mode);
   }
 
@@ -142,25 +142,47 @@ export class MinesweeperGame {
     this._remainingTiles[1](value);
   }
 
+  setClickMode = (mode: ClickMode) => () => {
+    this.clickMode = mode;
+  };
+
   getCell(x: number, y: number) {
     const index = y * this.boardWidth + x;
     return this._board[0][index];
   }
 
-  clickCell(x: number, y: number): () => void {
-    return () => {
-      switch (this.clickMode) {
-        case ClickMode.Dig:
-          this._reveal(x, y);
-          break;
-        case ClickMode.Flag:
-          this._toggleFlag(x, y);
-          break;
-      }
-    };
+  clickCell(x: number, y: number): (() => void) | undefined {
+    const cell = this.getCell(x, y);
+
+    const isPlaying = !this.gameOver && !this.paused;
+    const isDigging = this.clickMode === ClickMode.Dig;
+    const isFlagging = this.clickMode === ClickMode.Flag;
+
+    const proximitySatisfied =
+      cell.proximityFlags === cell.proximityBombs && cell.proximityBombs > 0;
+    const canDig = isDigging && cell.covered && !cell.flagged;
+    const canRevealMore = isDigging && !cell.covered && proximitySatisfied;
+    const canToggleFlag = isFlagging && cell.covered;
+    const isClickable = canDig || canRevealMore || canToggleFlag;
+    const playable = isPlaying && isClickable;
+
+    return playable
+      ? () => {
+          switch (this.clickMode) {
+            case ClickMode.Dig:
+              this._reveal(x, y);
+              break;
+            case ClickMode.Flag:
+              this._toggleFlag(x, y);
+              break;
+          }
+        }
+      : undefined;
   }
 
-  startGame(difficulty: Difficulty) {
+  startGame = (difficulty: Difficulty) => () => this._startGame(difficulty);
+
+  private _startGame(difficulty: Difficulty) {
     let width: number;
     let height: number;
     let bombs: number;
@@ -174,11 +196,6 @@ export class MinesweeperGame {
         width = 15;
         height = 12;
         bombs = 30;
-        break;
-      case Difficulty.Hard:
-        width = 32;
-        height = 16;
-        bombs = 99;
         break;
     }
     const board = new Array(width * height).fill(0).map(

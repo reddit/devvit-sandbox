@@ -1,7 +1,7 @@
 export type Cell = {
   bomb: boolean;
-  proximityBombs: number;
   covered: boolean;
   flagged: boolean;
+  proximityBombs: number;
   proximityFlags: number;
 };

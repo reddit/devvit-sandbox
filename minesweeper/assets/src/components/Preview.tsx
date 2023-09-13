@@ -1,6 +1,8 @@
 import { Devvit } from '@devvit/public-api';
 
-export const Preview = () => {
+import CustomPostComponent = Devvit.CustomPostComponent;
+
+export const Preview: CustomPostComponent = () => {
   return (
     <blocks height={'tall'}>
       <vstack gap={'large'} alignment={'center middle'} grow>

@@ -1,6 +1,7 @@
 import { Devvit } from '@devvit/public-api';
-import { SharedProps } from '../../sharedProps.js';
+
 import { CellView } from './Cell.js';
+import { SharedProps } from '../../../sharedProps.js';
 
 export const Board = ({ game }: SharedProps) => {
   const rows = [];

@@ -1,8 +1,9 @@
 import { Devvit } from '@devvit/public-api';
+
 import { MinesweeperGame } from '../game.js';
 import { Pages } from '../pages.js';
-import { HomePage } from './page/Home.js';
 import { GamePage } from './page/Game.js';
+import { HomePage } from './page/Home.js';
 import CustomPostComponent = Devvit.CustomPostComponent;
 
 export const Minesweeper: CustomPostComponent = (context): JSX.Element => {
@@ -15,8 +16,6 @@ export const Minesweeper: CustomPostComponent = (context): JSX.Element => {
       break;
     case Pages.Game:
       currentPage = <GamePage game={game} />;
-      break;
-    case Pages.Scores:
       break;
   }
 
