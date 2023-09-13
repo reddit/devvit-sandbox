@@ -1,6 +1,6 @@
 # Minesweeper
 
-The classic puzzle game brought to Dev Platform custom posts.
+Minesweeper is a classic puzzle game brought to Dev Platform via custom posts.
 
 The app uses custom posts, useState, useInterval, Menu Actions, the Reddit API Client, and Images.
 
