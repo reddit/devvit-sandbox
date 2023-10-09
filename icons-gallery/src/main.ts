@@ -3,8 +3,6 @@ import { Devvit } from "@devvit/public-api";
 import { IconsGallery } from "./components/IconsGallery.js";
 import { Preview } from "./components/Preview.js";
 
-Devvit.debug.emitSnapshots = true;
-
 Devvit.configure({
   redditAPI: true,
 });
