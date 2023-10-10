@@ -1,6 +1,3 @@
-
-
-
 import { Devvit } from '@devvit/public-api';
 
 import BlockComponent = Devvit.BlockComponent;
@@ -38,7 +35,7 @@ export const RadioButton: BlockComponent<RadioButtonProps> = ({
       grow={grow || false}
     >
       <icon name={checked ? 'radio-button-fill' : 'radio-button-outline'} color={'black'} />
-      <text selectable={false} color={!disabled ? textColor : disabledTextColor}>
+      <text selectable={false} color={!disabled ? disabledTextColor : textColor}>
         {label}
       </text>
     </hstack>
